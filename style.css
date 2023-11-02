@@ -138,18 +138,21 @@ em:hover {
 
 nav .copyright {
   font-size: x-small;
+  text-shadow: 2px 1px #888888;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 18px;
-  right: -7px;
+  top: 4px;
+  right: -13px;
   }
 
-nav .mobile{
+nav .mobile {
   display: none;
 }
 
+
 nav > ul {
+  
     margin-left: auto;
     margin-right: 16px;
   }
@@ -481,6 +484,12 @@ form {
   margin-right: auto;
   margin-bottom: 5%;
   border-radius: 10px;
+  filter: grayscale(100%);
+}
+
+form:hover{
+  filter:grayscale(0%);
+
 }
 
 form fieldset{
@@ -509,28 +518,55 @@ select{
   justify-content: center;
 }
 
-input[type="date"]{
+input[type="number"],input[type="date"]{
   width: 97.5%;
   padding: 4px 4px;
   margin: 8px 0;
   display: inline-block;
-}
+} 
 
 .submit{
   display: flex;
   justify-content: center;
+  gap: 5%;
 }
-
-input[type="button"]{
-  width: 50%;
+input[type="submit"]{
+  width: 40%;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 4px 4px;
   margin: 8px 0;
-  background-color: rgba(0, 128, 0, 0.038);
+  background-color: rgba(240, 11, 11, 0.475);
   cursor: pointer;
 }
 
+input[type="submit"]:hover{
+  box-shadow: 0px 3px #888888;
+  width: 38%;
+  height: 45px;
+  padding: 4px 4px;
+  margin: 11px 0;
+  
+}
+
+input[type="button"]{
+  width: 40%;
+  height: 50px;
+  border-radius: 30px;
+  padding: 4px 4px;
+  margin: 8px 0;
+  background-color: rgba(13, 186, 13, 0.29);
+  cursor: pointer;
+}
+
+input[type="button"]:hover{
+  box-shadow: 0px 3px #888888;
+  width: 38%;
+  height: 45px;
+  padding: 4px 4px;
+  margin: 11px 0;
+  
+}
 
 /*---ALAMAT TOKO---*/
 
@@ -576,3 +612,6 @@ footer{
 }
 
 /*---MENU FOOTER END---*/
+
+
+

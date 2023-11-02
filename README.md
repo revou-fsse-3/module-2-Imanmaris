@@ -14,7 +14,7 @@ Basic Website with HTML, CSS, simple Javascript and responsive website.
 - [x] Applying one responsive image with <b>picture + source + srcset</b> method
 - [x] Creating Asymetrical Grid
 - [x] Creating animation with two method : <b>animation and transition</b>
-- [ ] Using at least one advanced form element (date, color, local date, range picker). <b style="font-style:italic;">(not yet)</b>
+- [x] Using at least one advanced form element (date, color, local date, range picker). <b style="font-style:italic;">(not yet)</b>
 
 
 
@@ -22,7 +22,7 @@ Basic Website with HTML, CSS, simple Javascript and responsive website.
 ---
 </br>
 
-## My Wesbsite < coming soon and still being planned >
+## My Wesbsite 
 
 ### About Content
 
@@ -88,9 +88,8 @@ Responsive mode available on desktop and mobile
 
 ---
 
-<h2 align="center">< Coming Soon and still being planned ... ></h2>
 
-<p align="center">last created on November 01, 2023</p>
+<p align="center">last created on November 02, 2023</p>
 <p align="center"><i>copyright &copy; 2023</i></p>
 
 

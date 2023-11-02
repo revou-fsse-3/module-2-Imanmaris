@@ -25,9 +25,12 @@
         <nav class="navbar">
 
             <span class="main-logo">
-              <img src="/assets/image/Metal-Ball-logo.png"
-                alt="surface plating logo"            
-                style="width:40px; height:40px;"/>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
     
               <b><em>SURFACE PLATING SERVICE</em></b>
     
@@ -35,11 +38,16 @@
             </span>
         
             <ul class="menu-bar">
+
+
                 <li><a href="#header">Home</a></li>
                 <li><a href="#layanan">Our Services</a></li>
                 <li><a href="#product-picture">Available Project</a></li>
                 <li><a href="#kontak">Contact</a></li>
+
             </ul>
+
+
     
             <div class="mobile">
                 <img
@@ -53,8 +61,12 @@
                     <a href="#product-picture"><li>Available Project</li></a>
                     <a href="#kontak"><li>Contact</li></a>
                     <a href="https://github.com/imanmaris99" target="_blank"><li>Show me more</li></a>
-                  </ul>
+                </ul>
+
             </div>  
+
+
+
         </nav>
 
         <div class="mading-1">    
@@ -242,7 +254,7 @@
                     <legend>Personal Data:</legend>
                     <div>
                         <label for="fname">Name:</label>
-                        <input type="text" id="fname" name="fname" required="please input your name here">  
+                        <input type="text" id="fname" name="fname" required minlength="3" maxlength="12">  
                     </div>
                     <div>
                         <p>Gender:
@@ -254,13 +266,19 @@
                     </div>
                     <div>
                     <div>
-                        <label for="hname">Phone Number:</label>
-                        <input type="text" id="hname" name="hname" required>
+                        <label for="hnumber">Phone Number:</label>
+                        <input type="number" id="hnumber" name="hnumber" required>
                     </div>
                     <div>
                         <label for="ename">Email:</label>
                         <input type="email" id="ename" name="ename" required>
                     </div>
+                    
+                    <div>
+                        <label for="edate">Request Date:</label>
+                        <input type="date" id="edate" name="edate" required>
+                    </div>
+
                     <div>
                         <p>Message:</p>
                         <textarea id="pesan" name="pesan"></textarea>
@@ -268,6 +286,7 @@
 
                     </br>
                     <div class="submit">
+                        <input type="submit" value="Check Data">
                         <input type="button" onclick="addContact()" value="SUBMIT" />
                     </div>
 

@@ -51,6 +51,6 @@ function showDivs2(n) {
 
 
 function addContact(){
-    alert("Pesan Anda Telah Terkirim..!!!");
+    alert("Don't forget to complete your data...!!!");
 }
 
