@@ -194,7 +194,7 @@ nav > ul > li a:hover {
 .mobile ul {
   display: none;
   position: absolute;
-  background-color: #e5d183ec;
+  background-color: #e5d183;
   width: 100%;
   margin: -10px -650px;
   height: 500%;
@@ -210,12 +210,15 @@ nav > ul > li a:hover {
   padding: 20px 5px;
   text-decoration: none;
   display: block;
+  background-color: #e7d280;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 /* Ubah warna link dropdown on hover */
 .mobile ul a:hover {
   background-color: #ddd;
   text-shadow: 0.5px 0.5px 0px #eda010, 3px 3px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 /* Tampilkan menu dropdown on hover */
