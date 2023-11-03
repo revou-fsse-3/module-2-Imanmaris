@@ -134,6 +134,14 @@
         background-color: #F5F7F8;
       }
 
+    #product-picture .proyek-item .menu-bar {
+        display: none;
+      }
+
+    #product-picture .proyek-item .mobile-bar {
+        display: block;
+      }
+
     #product-picture .grid-container{
         display: none;
       }
@@ -230,6 +238,19 @@
         width: 100%;
         margin-bottom: 1%;
         font-style: main-font;
-        animation: none;
+        animation: brand 3s 2;
+        animation-iteration-count:infinite;
+        animation-direction: alternate;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
       }
-  }
+    
+      @keyframes brand {
+       
+        0%   {text-shadow:2px 2px 7px #159fe4; font-size: 14px; opacity: 0.01;}
+        50%   {text-shadow:2px 2px 7px #159fe4; font-size: 17px;}
+        75%  {text-shadow:2px 2px 7px #e4ad15; font-size: 17px;}
+        100%  {text-shadow:2px 2px 7px #eee8d6; font-size: 17px;}
+    
+      }
+    }
