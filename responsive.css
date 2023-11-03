@@ -140,8 +140,9 @@
 
     #product-picture .proyek-item .mobile-bar {
         display: block;
+        list-style-type: circle;
       }
-
+      
     #product-picture .grid-container{
         display: none;
       }
@@ -209,15 +210,33 @@
         padding-bottom: 10%;
       }
 
+    form{
+      margin-top: -2%;
+    }
+
     form fieldset{
         padding: 20px 10px 10px 10px;
 
       }
 
+      form fieldset{
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+      }
+        
+      
+      form fieldset:hover{
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.2);
+        margin-top: -5%;
+      }
+
     form fieldset legend{
         padding: 10px;
         text-align: center;
-
       }
     /*
       #product-picture .grid-container {
@@ -235,22 +254,20 @@
 
       footer{
         text-align: center;
-        width: 100%;
-        margin-bottom: 1%;
-        font-style: main-font;
-        animation: brand 3s 2;
-        animation-iteration-count:infinite;
-        animation-direction: alternate;
-        transition: 0.5s;
-        transition-timing-function: ease-in-out;
+        margin-top: 0%;
+        color: rgb(119, 151, 180);
+        text-shadow: 2px 2px 1px #131212;
+        margin-bottom: 1.5%;
+        animation: glow 1s ease-in-out infinite alternate;
       }
-    
-      @keyframes brand {
-       
-        0%   {text-shadow:2px 2px 7px #159fe4; font-size: 14px; opacity: 0.01;}
-        50%   {text-shadow:2px 2px 7px #159fe4; font-size: 17px;}
-        75%  {text-shadow:2px 2px 7px #e4ad15; font-size: 17px;}
-        100%  {text-shadow:2px 2px 7px #eee8d6; font-size: 17px;}
-    
+      
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #eda010, 0 0 40px #eda010, 0 0 50px #eda010, 0 0 60px #ed8210, 0 0 70px #ed8210;
+        }
+        
+        to {
+          text-shadow: 0 0 10px #fff, 0 0 30px #e5d183ec, 0 0 40px #e5d183ec, 0 0 50px #e5d183ec, 0 0 60px #e5d183ec, 0 0 70px #e5d183ec, 0 0 80px #ed5d10;
+        }
       }
     }
