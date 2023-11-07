@@ -7,10 +7,26 @@ html {
   scroll-behavior: smooth;
   }
 
+:root {
+    --primary-color: #213555;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #EEEEEE;
+    --heading-color: #292922;
+    --logo-color:#4F709C;
+    --nav-color:#e5d183;
+    --section-color:#F5F7F8;
+    --form-color:#4f709c3a;
+}
+
+
 body {
-    background-color: #EEEEEE;
+    background-color: var(--bg-color);
     font-family: roboto;
+    color: var(--font-color);
     max-width: 100%;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 @font-face {
@@ -109,12 +125,16 @@ nav {
     display: flex;
     align-items: center;
     height: 10%;
-    background-color: #e5d183;
+    background-color: var(--nav-color);
     z-index: 1;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
   }
+  
 .main-logo {
     position: relative;
   }
+  
 nav > span {
     display: flex;
     align-items: center;
@@ -126,7 +146,7 @@ nav > span > img {
   }
 
 em {
-    color: #4F709C;
+    color: var(--logo-color);
     font-family: roboto ;
     text-shadow: 0.5px 0.5px 0px #D7DACC, 3px 3px 0px rgba(0,0,0,0.1);
     cursor: pointer;
@@ -147,7 +167,9 @@ em {
   }
 
 em:hover {
-  font-weight:500;
+  font-style: normal;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 nav .copyright {
@@ -176,11 +198,12 @@ nav > ul {
 
 nav > ul > li {
     display: inline-block;
-    color: #213555;
+    color: var(--primary-color);
+    
   }
 
 nav > ul > li > a {
-    color: #213555;
+    color: var(--primary-color);
     font-family: roboto ;
     font-size: medium;
     margin-right: 5px;
@@ -190,7 +213,7 @@ nav > ul > li > a {
   }
 
 nav > ul > li a:hover {
-  background-color: #ddd;
+  background-color: var(--nav-color);
   text-shadow: 0.5px 0.5px 0px #eda010, 3px 3px 0px rgba(0,0,0,0.1);
   font-size: large;
   
@@ -211,7 +234,7 @@ nav > ul > li a:hover {
 .mobile ul {
   display: none;
   position: absolute;
-  background-color: #e5d183;
+  background-color: var(--nav-color);
   width: 100%;
   margin: -10px -700px;
   height: 500%;
@@ -223,7 +246,7 @@ nav > ul > li a:hover {
 
 /* Links didalam dropdown */
 .mobile ul a {
-  color: #4F709C;
+  color: var(--logo-color);
   font-weight: bolder ;
   padding: 20px 0px;
   text-decoration: none;
@@ -233,9 +256,10 @@ nav > ul > li a:hover {
 
 /* Ubah warna link dropdown on hover */
 .mobile ul a:hover {
-  background-color: #ddd;
   text-shadow: 0.5px 0.5px 0px #eda010, 3px 3px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-size: larger;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 /* Tampilkan menu dropdown on hover */
@@ -245,7 +269,7 @@ nav > ul > li a:hover {
 
 /* Ubah warna background tombol dropdown saat konten dropdown ditampilkan */
 .mobile:hover img {
-  background-color: #eda010;
+  background-color: var(--logo-color);
   border-radius: 30px;
 }
 
@@ -258,7 +282,7 @@ nav > ul > li a:hover {
 
 main {
     /*font-style: courier,arial,helvetica;*/
-    background-color: #F0F0F0;
+    background-color: var(--bg-color);
     margin:30px 5px;
   }
 
@@ -266,9 +290,11 @@ main {
 article {  
   margin-top: 5%;
   margin-bottom: 0%;
-  background-color: #F5F7F8;
+  background-color: var(--section-color);
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 article h2{
@@ -285,9 +311,12 @@ article p{
   text-align: center;
   margin-top: 5%;
   margin-bottom: 0%;
-  background-color: #F5F7F8;
+  background-color: var(--section-color);
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  
 }
 
 #layanan h3 {
@@ -297,7 +326,9 @@ article p{
 }
 
 #layanan .layanan-item1{
-  background-color: #F5F7F8;
+  background-color: var(--section-color);
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 
@@ -308,9 +339,11 @@ article p{
 
 #layanan .layanan-item2{
   margin-top: 10px;
-  background-color: #F5F7F8;
+  background-color: var(--section-color);
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 /*------------------------------------*/
@@ -320,9 +353,11 @@ article p{
   
   margin-top: 5%;
   margin-bottom: 0%;
-  background-color: #F5F7F8;
+  background-color: var(--section-color);
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 #proyek h2{
@@ -340,7 +375,10 @@ article p{
 
 #product-picture{
   margin-top: 5%;
-  background-color: #F5F7F8;
+  padding-bottom: 30px;
+  background-color: var(--section-color);
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 #product-picture h3 {
@@ -373,6 +411,13 @@ display: none;
 
 }
 
+#product-picture .proyek-item .menu-bar li:hover{
+  box-shadow: 0px 8px 50px 5px var(--secondary-color);
+  background-color: var(--form-color);
+  color: var(--heading-color);
+}
+
+
 #product-picture .grid-container div{
   filter: blur(2px);
   -webkit-filter: blur(2px);
@@ -384,7 +429,7 @@ display: none;
 #product-picture .grid-container div:hover{
   filter: blur(0px);
   -webkit-filter: blur(0px);
-box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.2);
+box-shadow: 0px 8px 50px 5px var(--secondary-color);
 padding-top: 1%;
 }
 
@@ -451,9 +496,12 @@ padding-top: 1%;
 /*--------------------------------*/
 
 #product-picture-2 {
-  margin-top: 10%;
+  margin-top: 0%;
   padding-top: 10px;
-  background-color: #F5F7F8;
+  padding-bottom: 70px;
+  background-color: var(--section-color);
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 #product-picture-2 .grid-container-2 div{
@@ -465,7 +513,7 @@ padding-top: 1%;
 
 #product-picture-2 .grid-container-2 div:hover{
 filter:opacity(100%);
-box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.2);
+box-shadow: 0px 8px 50px 5px var(--secondary-color);
 padding-top: 1%;
 }
 
@@ -526,14 +574,21 @@ padding-top: 1%;
     object-fit: cover;
 }
 
+#product-picture-2 .proyek-item-2 .menu-bar-2 li:hover{
+  box-shadow: 0px 8px 50px 5px var(--secondary-color);
+  background-color: var(--form-color);
+  color: var(--heading-color);
+}
 
 /*--PRODUKSI-VIDEO IMPLEMENTASI--*/
 
 #proses-produksi{
-  margin-top: 10%;
-  background-color: #F5F7F8;
+  margin-top: 5%;
+  background-color: var(--section-color);
   padding-top: 20px;
   padding-bottom: 5%;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 #proses-produksi h2{
@@ -551,9 +606,11 @@ padding-top: 1%;
 
 #kontak{
   margin-top: 5%;
-  background-color: #F5F7F8;
+  background-color: var(--section-color);
   padding-top: 10px;
   padding-bottom: 1%;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 #kontak h2{
@@ -581,7 +638,7 @@ form:hover{
 
 form fieldset{
   padding: 20px 10px 10px 10px;
-  background-color: #4f709c3a;
+  background-color: var(--form-color);
   filter: blur(2px);
   -webkit-filter: blur(2px);
   transition-duration: 0.5s;
@@ -591,7 +648,7 @@ form fieldset{
 form fieldset:hover{
   filter: blur(0px);
   -webkit-filter: blur(0px);
-  box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 5px var(--secondary-color);
   margin-top: -3%;
 }
 
@@ -641,7 +698,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-  box-shadow: 0px 3px #888888;
+  box-shadow: 0px 3px var(--font-color);
   width: 38%;
   height: 45px;
   padding: 4px 4px;
@@ -662,7 +719,7 @@ input[type="button"]{
 }
 
 input[type="button"]:hover{
-  box-shadow: 0px 3px #888888;
+  box-shadow: 0px 3px var(--font-color);
   width: 38%;
   height: 45px;
   padding: 4px 4px;
@@ -718,3 +775,15 @@ footer{
 
 
 
+/*---------------TRY USED DARKMODE -----------------*/
+[data-theme="dark"] {
+  --primary-color: #e1e1ff;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #213555;
+  --heading-color: #818cab;
+  --logo-color:#e4ad15;
+  --nav-color:#4F709C;
+  --section-color:#1e2f4c;
+  --form-color:rgba(120, 171, 233, 0.812);
+}
