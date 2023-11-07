@@ -331,6 +331,10 @@ article p{
   transition-timing-function: ease-in-out;
 }
 
+#layanan .layanan-item1 p{
+  margin-right: 5%;
+  margin-left: 5%;
+}
 
 
 /*#layanan .layanan-item1 picture{
@@ -346,6 +350,10 @@ article p{
   transition-timing-function: ease-in-out;
 }
 
+#layanan .layanan-item2 p{
+  margin-right: 5%;
+  margin-left: 5%;
+}
 /*------------------------------------*/
 
 
@@ -389,9 +397,17 @@ article p{
 
 
 #product-picture ul {
-  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   font-family: 'Roboto Mono',monospace;
-  text-align: center;
+  text-align: left;
+
+}
+
+#product-picture ul li {
+  padding-bottom: 1%;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 #product-picture .proyek-item .menu-bar{
@@ -404,6 +420,7 @@ display: none;
 
 #product-picture .grid-container {
   display: grid;
+  margin: 5%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 35px;
   row-gap: 60px;
@@ -415,6 +432,7 @@ display: none;
   box-shadow: 0px 8px 50px 5px var(--secondary-color);
   background-color: var(--form-color);
   color: var(--heading-color);
+  padding-bottom: 2%;
 }
 
 
@@ -519,10 +537,18 @@ padding-top: 1%;
 
 
 #product-picture-2 ul {
-  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   font-family: 'Roboto Mono',monospace;
-  text-align: center;
+  text-align: left;
 }
+
+#product-picture-2 ul li {
+  padding-bottom: 1%;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
 
 #product-picture-2 .proyek-item-2 .menu-bar-2{
   list-style-type: circle;
@@ -536,6 +562,7 @@ padding-top: 1%;
 
 #product-picture-2 .grid-container-2 {
   display: grid;
+  margin: 5%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 35px;
   row-gap: 60px;
@@ -578,9 +605,11 @@ padding-top: 1%;
   box-shadow: 0px 8px 50px 5px var(--secondary-color);
   background-color: var(--form-color);
   color: var(--heading-color);
+  padding-bottom: 2%;
 }
 
 /*--PRODUKSI-VIDEO IMPLEMENTASI--*/
+
 
 #proses-produksi{
   margin-top: 5%;
@@ -592,15 +621,62 @@ padding-top: 1%;
 }
 
 #proses-produksi h2{
+  display: flex;
+  justify-content: center;
   text-align: center;
+  padding-bottom: 1%;
+}
+
+
+#proses-produksi .produksi{
+  width: 100vw;
+  height: 200vh;
+}
+
+#proses-produksi .produksi{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-top: 5vh;
+  margin-bottom: 35vh;
   padding-bottom: 5%;
 }
 
-#proses-produksi iframe{
-  text-align: center;
-  padding-top: 2%;
+#proses-produksi .produksi > iframe{
+  position: absolute;
+  width:70%; 
+  height:60vh;
+  margin-top:5% ;
+
 }
 
+#proses-produksi .produksi-2{
+  width: 100vw;
+  height: 200vh;
+}
+
+#proses-produksi .produksi-2{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-top: 5vh;
+  margin-bottom: 35vh;
+  padding-bottom: 5%;
+}
+
+#proses-produksi .produksi-2 > iframe{
+  position: absolute;
+  width:70%; 
+  height:60vh;
+  margin-top:5% ;
+
+}
 
 /*--CONTACT AREA--*/
 
@@ -776,6 +852,7 @@ footer{
 
 
 /*---------------TRY USED DARKMODE -----------------*/
+
 [data-theme="dark"] {
   --primary-color: #e1e1ff;
   --secondary-color: #818cab;
@@ -787,3 +864,74 @@ footer{
   --section-color:#1e2f4c;
   --form-color:rgba(120, 171, 233, 0.812);
 }
+
+/*----------------darkmode end---------------------*/
+
+/*---------try to used carousel----------------------*/
+.pic-ctn {
+  width: 100vw;
+  height: 200vh;
+}
+
+.pic-ctn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-top: 8vh;
+  margin-bottom: 20vh;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  border-radius: 50%;
+  width:47vw; 
+  height:50vh;
+  margin-top:5% ;
+  left: calc(50% -100px);
+  opacity: 0;
+  animation: display 10s infinite;
+  box-shadow: 0px 5px 45px 5px var(--font-color);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+/*------------------carousel end-------------------*/

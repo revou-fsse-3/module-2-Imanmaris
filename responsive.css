@@ -206,12 +206,44 @@
         text-align: center;
         padding-bottom: 10%;
       }
-      
-    #proses-produksi iframe{
-        text-align: center;
-        padding-top: 5%;
-        padding-bottom: 2%;
+
+
+    #proses-produksi .produksi{
+
+        padding-bottom: 0%;
       }
+
+    #proses-produksi .produksi > iframe{
+        position: absolute;
+        width:80%; 
+        height:50vh;
+        margin-top:10% ;
+        margin-bottom: 0%;
+      }
+      
+
+    #proses-produksi .produksi-2{
+
+        padding-bottom: 0%;
+      }
+
+    #proses-produksi .produksi-2 > iframe{
+        position: absolute;
+        width:80%; 
+        height:50vh;
+        margin-top:10% ;
+      
+      }
+
+    .pic-ctn > img {
+        position: absolute;
+        border-radius: 50%;
+        width:80vw; 
+        height:50vh;
+        margin-top:15% ;
+        
+      }
+
 
     #kontak h2{
         margin-top: 5%;
@@ -221,6 +253,7 @@
 
     form{
       margin-top: -2%;
+      width: 87%;
     }
 
     form fieldset{
